@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_details"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textStyle="italic|bold"/>
+
+            <EditText
+                android:id="@+id/heading_popup_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:textStyle="bold"
+                android:hint="@string/hint_title" />
+
+            <EditText
+                android:id="@+id/text_popup_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/heading_popup_id"
+                android:hint="@string/hint_text"/>
+
+            <Button
+                android:id="@+id/save_popup_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_popup_id"
+                android:text="@string/save_button"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
